@@ -1,0 +1,46 @@
+/* BlogList CSS */
+.blog-list {
+    display: flex;
+    flex-direction: column; /* Align sections vertically */
+    gap: 20px; /* Add space between sections */
+}
+
+.section {
+    margin-bottom: 5px; /* Add space between sections */
+}
+
+.section h2 {
+    font-size: 2rem; /* Adjust heading size */
+    font-weight: 600;
+    margin-bottom: 5px; /* Add space below heading */
+    margin-top: 5px;
+}
+
+.popular-movies,
+.action-movies,
+.comedy-movies,
+.adventure-movies,
+.thriller-movies,
+.drama-movies {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+}
+
+.popular-movies::-webkit-scrollbar,
+.action-movies::-webkit-scrollbar,
+.comedy-movies::-webkit-scrollbar,
+.adventure-movies::-webkit-scrollbar,
+.thriller-movies::-webkit-scrollbar,
+.drama-movies::-webkit-scrollbar {
+    display: none;
+}
+
+.popular-movies,
+.action-movies,
+.comedy-movies,
+.adventure-movies,
+.thriller-movies,
+.drama-movies {
+    scrollbar-width: none; 
+}

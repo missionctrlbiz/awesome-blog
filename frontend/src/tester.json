@@ -1,0 +1,197 @@
+[
+    {
+      _id: ObjectId('662fcd0852a3f50b3976d945'),
+      title: 'Dusk for a Hitman: A Gripping Tale of Redemption',
+      coverImage: 'https: //img.yts.mx/assets/images/movies/dusk_for_a_hitman_2023/medium-cover.jpg',
+      excerpt: 'A retired assassin is drawn back into the underworld for one last job, seeking redemption and a chance to escape his past.',
+      content: "In the shadowy realm of contract killers, Johnathan 'Dusk' Evans had carved a notorious reputation. But after years of bloodshed, he yearned for a life free from violence. Retirement offered a glimmer of hope, until a desperate plea from an old friend forced him to confront his demons once more. As Dusk navigates the treacherous labyrinth of betrayal and deceit, he must make a choice that will determine his ultimate fate.",
+      tags: [ 'action', 'thriller', 'redemption', 'crime'
+        ],
+      likes: 0,
+      createdAt: ISODate('2024-04-29T16: 38: 32.390Z'),
+      updatedAt: ISODate('2024-04-29T16: 38: 32.390Z'),
+      __v: 0
+    },
+    {
+      _id: ObjectId('662fcd2d52a3f50b3976d947'),
+      title: 'Arthur the King: A Modern Reimagining of the Arthurian Legend',
+      coverImage: 'https: //img.yts.mx/assets/images/movies/arthur_the_king_2024/medium-cover.jpg',
+      excerpt: 'King Arthur and his Knights of the Round Table face the challenges of a contemporary world in this bold and imaginative retelling.',
+      content: 'In a time where chivalry and honor seem lost, a young Arthur rises to claim his rightful place as king. With his loyal knights by his side, he confronts modern-day threats, from corporate greed to environmental destruction, while upholding the timeless values of justice and compassion.',
+      tags: [ 'fantasy', 'adventure', 'legend', 'modern retelling'
+        ],
+      likes: 0,
+      createdAt: ISODate('2024-04-29T16: 39: 09.242Z'),
+      updatedAt: ISODate('2024-04-29T16: 39: 09.242Z'),
+      __v: 0
+    },
+    {
+      _id: ObjectId('662fcda652a3f50b3976d949'),
+      title: 'You Can Call Me Bill: A Comedy of Errors and Self-Discovery',
+      coverImage: 'https: //img.yts.mx/assets/images/movies/you_can_call_me_bill_2023/medium-cover.jpg',
+      excerpt: 'A case of mistaken identity throws a mild-mannered accountant into a whirlwind of hilarious situations and unexpected self-discovery.',
+      content: 'Bill Thompson was an ordinary man leading an ordinary life, until one fateful day when he was mistaken for a renowned spy. Suddenly thrust into a world of espionage, gadgets, and danger, Bill must navigate a series of comical misadventures while discovering hidden depths of courage and resourcefulness he never knew he possessed.',
+      tags: [ 'comedy', 'adventure', 'mistaken identity', 'self-discovery'
+        ],
+      likes: 0,
+      createdAt: ISODate('2024-04-29T16: 41: 10.852Z'),
+      updatedAt: ISODate('2024-04-29T16: 41: 10.852Z'),
+      __v: 0
+    },
+    {
+      _id: ObjectId('662fd2562b09eeed17ae8967'),
+      title: 'The Enchanting World of Wonky Chickens',
+      coverImage: 'https: //img.wonkychickens.org/data/cover/imdb/8/A/8A6wB0UPsA.jpg',
+      excerpt: 'Delve into the whimsical and quirky lives of chickens with unique personalities and endearing quirks.',
+      content: 'In a world filled with ordinary poultry, there exists a group of extraordinary chickens who defy expectations. These are the wonky chickens, each with their own distinctive appearance and charmingly unconventional behavior. Join us as we explore their stories, from the adventurous escapades of Penelope the one-legged hen to the philosophical musings of Bartholomew the rooster with a crooked beak.',
+      tags: [ 'chickens', 'humor', 'farm life', 'animals'
+        ],
+      likes: 0,
+      createdAt: ISODate('2024-04-29T17: 01: 10.654Z'),
+      updatedAt: ISODate('2024-04-29T17: 01: 10.654Z'),
+      __v: 0
+    },
+    {
+      _id: ObjectId('663d2516af38ba39e6f66b4a'),
+      title: 'Mars Express: A Journey to the Red Planet',
+      coverImage: 'https: //yts.mx/assets/images/movies/mars_express_2023/medium-cover.jpg',
+      excerpt: 'Join the crew of the Mars Express as they embark on an epic journey to explore the mysteries of the Red Planet.',
+      content: 'Experience the thrill of space travel as we follow the crew of the Mars Express on their mission to unlock the secrets of Mars. From breathtaking landscapes to unexpected discoveries, this journey will leave you on the edge of your seat.',
+      tags: [ 'space', 'adventure', 'exploration'
+        ],
+      likes: 0,
+      createdAt: ISODate('2024-05-09T19: 33: 42.296Z'),
+      updatedAt: ISODate('2024-05-09T19: 33: 42.296Z'),
+      __v: 0
+    },
+    {
+      _id: ObjectId('663d2810af38ba39e6f66b4e'),
+      title: 'Baby Assassins 2: Babies',
+      coverImage: 'https: //img.yts.mx/assets/images/movies/baby_assassins_2_babies_2023/medium-cover.jpg',
+      excerpt: "Watch out! The adorable babies are back, but this time, they're armed and dangerous. Join us for a heart-pounding adventure as these pint-sized assassins take on their biggest challenge yet.",
+      content: "Prepare for non-stop action and laugh-out-loud moments as you follow the misadventures of these little troublemakers. With diapers and pacifiers in one hand and weapons in the other, they'll stop at nothing to achieve their mission.",
+      tags: [ 'action', 'comedy'
+        ],
+      likes: 0,
+      createdAt: ISODate('2024-05-09T19: 46: 24.051Z'),
+      updatedAt: ISODate('2024-05-09T19: 46: 24.051Z'),
+      __v: 0
+    },
+    {
+      _id: ObjectId('663d283faf38ba39e6f66b50'),
+      title: 'Paul Chowdhry Live: Innit',
+      coverImage: 'https: //img.yts.mx/assets/images/movies/paul_chowdhry_live_innit_2019/medium-cover.jpg',
+      excerpt: 'Get ready to bust a gut with comedian Paul Chowdhry as he takes the stage for a night of side-splitting comedy. From hilarious observations to razor-sharp wit, this stand-up special will leave you in stitches.',
+      content: "Join Paul Chowdhry for an unforgettable evening of comedy as he tackles everything from politics to pop culture with his signature brand of humor. With his no-holds-barred approach, he's guaranteed to keep you entertained from start to finish.",
+      tags: [ 'comedy', 'stand-up'
+        ],
+      likes: 0,
+      createdAt: ISODate('2024-05-09T19: 47: 11.378Z'),
+      updatedAt: ISODate('2024-05-09T19: 47: 11.378Z'),
+      __v: 0
+    },
+    {
+      _id: ObjectId('663d2870af38ba39e6f66b52'),
+      title: 'Founders Day (2023)',
+      coverImage: 'https: //img.yts.mx/assets/images/movies/founders_day_2023/medium-cover.jpg',
+      excerpt: 'Step back in time and experience the magic of Founders Day, a celebration of history, heritage, and community spirit. From parades to picnics, this annual event brings the whole town together for a day of fun and festivities.',
+      content: "Join us as we celebrate the founding of our town with music, food, and entertainment for the whole family. With games, contests, and performances throughout the day, there's something for everyone to enjoy.",
+      tags: [ 'family', 'community', 'celebration'
+        ],
+      likes: 0,
+      createdAt: ISODate('2024-05-09T19: 48: 00.601Z'),
+      updatedAt: ISODate('2024-05-09T19: 48: 00.601Z'),
+      __v: 0
+    },
+    {
+      _id: ObjectId('663d287baf38ba39e6f66b54'),
+      title: 'The Roast of Tom Brady (2024)',
+      coverImage: 'https: //img.yts.mx/assets/images/movies/the_roast_of_tom_brady_2024/medium-cover.jpg',
+      excerpt: 'Get ready for a night of laughs as some of the biggest names in comedy come together to roast the one and only Tom Brady. From his football career to his personal life, nothing is off-limits in this hilarious roast.',
+      content: "Join us as we take a lighthearted look at the life and career of Tom Brady, with plenty of jokes and jabs along the way. With appearances from some of your favorite comedians, it's a night you won't soon forget.",
+      tags: [ 'comedy', 'roast'
+        ],
+      likes: 0,
+      createdAt: ISODate('2024-05-09T19: 48: 11.485Z'),
+      updatedAt: ISODate('2024-05-09T19: 48: 11.485Z'),
+      __v: 0
+    },
+    {
+      _id: ObjectId('663d2886af38ba39e6f66b56'),
+      title: 'Aavesham (2024)',
+      coverImage: 'https: //img.yts.mx/assets/images/movies/aavesham_2024/medium-cover.jpg',
+      excerpt: 'Prepare for an adrenaline-fueled thrill ride that will leave you breathless. Aavesham is a heart-pounding action-packed adventure that will keep you on the edge of your seat from start to finish.',
+      content: "Join our hero as he battles against impossible odds, facing off against ruthless enemies and overcoming insurmountable obstacles along the way. With danger lurking around every corner, he'll need all his skills and cunning to survive.",
+      tags: [ 'action', 'thriller'
+        ],
+      likes: 0,
+      createdAt: ISODate('2024-05-09T19: 48: 22.830Z'),
+      updatedAt: ISODate('2024-05-09T19: 48: 22.830Z'),
+      __v: 0
+    },
+    {
+      _id: ObjectId('663d28aeaf38ba39e6f66b58'),
+      title: 'Les Misérables: The Staged Concert (2019)',
+      coverImage: 'https: //img.yts.mx/assets/images/movies/les_miserables_the_staged_concert_2019/medium-cover.jpg',
+      excerpt: "Experience the power of music and the magic of theatre in this breathtaking concert event. Les Misérables: The Staged Concert brings Victor Hugo's timeless masterpiece to life in a whole new way.",
+      content: "Featuring an all-star cast and stunning musical performances, this concert event will transport you to the streets of 19th-century Paris, where love and revolution collide. With unforgettable songs and powerful storytelling, it's an experience you won't want to miss.",
+      tags: [ 'musical', 'concert', 'drama'
+        ],
+      likes: 0,
+      createdAt: ISODate('2024-05-09T19: 49: 02.220Z'),
+      updatedAt: ISODate('2024-05-09T19: 49: 02.220Z'),
+      __v: 0
+    },
+    {
+      _id: ObjectId('663d28bbaf38ba39e6f66b5a'),
+      title: 'The Final Attack on Wembley (2024)',
+      coverImage: 'https: //img.yts.mx/assets/images/movies/the_final_attack_on_wembley_2024/medium-cover.jpg',
+      excerpt: 'Get ready for the ultimate showdown as two rival teams face off in a high-stakes battle for glory. The Final Attack on Wembley is a pulse-pounding thriller that will keep you on the edge of your seat until the very end.',
+      content: "With everything on the line, the fate of the world hangs in the balance as these two teams go head-to-head in the biggest match of their lives. With stakes this high, there's no room for error.",
+      tags: [ 'action', 'sports', 'drama'
+        ],
+      likes: 0,
+      createdAt: ISODate('2024-05-09T19: 49: 15.468Z'),
+      updatedAt: ISODate('2024-05-09T19: 49: 15.468Z'),
+      __v: 0
+    },
+    {
+      _id: ObjectId('663d28c5af38ba39e6f66b5c'),
+      title: 'Vash (2023)',
+      coverImage: 'https: //img.yts.mx/assets/images/movies/vash_2023/medium-cover.jpg',
+      excerpt: 'Prepare for an epic adventure that will take you to the farthest reaches of the galaxy. Vash follows the journey of a lone space explorer as he embarks on a quest to unlock the secrets of the universe.',
+      content: 'Join Vash as he travels through distant galaxies, encountering strange new worlds and alien civilizations along the way. With danger lurking around every corner, he must rely on his wits and courage to survive.',
+      tags: [ 'science-fiction', 'space', 'adventure'
+        ],
+      likes: 0,
+      createdAt: ISODate('2024-05-09T19: 49: 25.085Z'),
+      updatedAt: ISODate('2024-05-09T19: 49: 25.085Z'),
+      __v: 0
+    },
+    {
+      _id: ObjectId('663d28cfaf38ba39e6f66b5e'),
+      title: 'Darkness of Man (2024)',
+      coverImage: 'https: //img.yts.mx/assets/images/movies/darkness_of_man_2024/medium-cover.jpg',
+      excerpt: 'Step into the shadows and confront the darkness within. Darkness of Man is a haunting exploration of the human psyche, where the line between good and evil blurs and morality is put to the test.',
+      content: 'In a world plagued by corruption and despair, one man must confront his inner demons and make a choice that will determine the fate of humanity. As he battles against the forces of darkness, he must also confront the darkness within himself.',
+      tags: [ 'drama', 'psychological', 'dark'
+        ],
+      likes: 0,
+      createdAt: ISODate('2024-05-09T19: 49: 35.380Z'),
+      updatedAt: ISODate('2024-05-09T19: 49: 35.380Z'),
+      __v: 0
+    },
+    {
+      _id: ObjectId('663d28dbaf38ba39e6f66b60'),
+      title: 'Deliverance (2022)',
+      coverImage: 'https: //img.yts.mx/assets/images/movies/deliverance_2022/medium-cover.jpg',
+      excerpt: 'Prepare for a gripping psychological thriller that will keep you on the edge of your seat from start to finish. Deliverance takes you on a journey into the depths of the human mind, where nothing is as it seems.',
+      content: "When a series of mysterious events unfold in a small town, a young detective must unravel the truth before it's too late. As he delves deeper into the case, he discovers dark secrets that threaten to consume him.",
+      tags: [ 'thriller', 'mystery', 'suspense'
+        ],
+      likes: 0,
+      createdAt: ISODate('2024-05-09T19: 49: 47.119Z'),
+      updatedAt: ISODate('2024-05-09T19: 49: 47.119Z'),
+      __v: 0
+    }
+]
