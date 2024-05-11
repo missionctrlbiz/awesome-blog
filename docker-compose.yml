@@ -1,0 +1,27 @@
+version: '3.8'
+
+services:
+  frontend:
+    build: 
+      # image: biibiiking/front:v1.0
+      context: ./frontend
+      dockerfile: Dockerfile
+    ports:
+      - "80:80"
+    networks:
+      - skynet
+    depends_on:
+      - backend
+
+  backend:
+    build: 
+      context: ./backend
+      dockerfile: Dockerfile
+    ports:
+      - "7000:7000"
+    networks:
+      - skynet
+
+networks:
+  skynet:
+    driver: bridge
