@@ -6,6 +6,8 @@ const Post = require('../models/Post');
 router.use(express.json());
 
 // Get all posts
+
+
 router.get('/posts', async (req, res) => {
     try {
         const posts = await Post.find();
