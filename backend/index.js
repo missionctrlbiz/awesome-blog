@@ -18,7 +18,7 @@ app.get('/', (req, res) => {
 //use post routes
 app.use('/api', postRoutes)
 
-//connect to db
+
 mongoose.connect(process.env.MONGO_URI).then(() => {
     app.listen(process.env.PORT, () => {
         console.log('Connected to DB & Listening on port 7000')
@@ -26,4 +26,3 @@ mongoose.connect(process.env.MONGO_URI).then(() => {
 }).catch((err) => {
     console.log(err)
 })
-
