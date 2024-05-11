@@ -14,7 +14,7 @@ RUN npm run build
 
 FROM nginx:alpine3.19 AS RUN
 
-WORKDIR /usr/shr/nginx/html
+WORKDIR /usr/share/nginx/html
 
 COPY --from=BUILD /com/dist .
 
