@@ -4,9 +4,10 @@ import CarouselSlide from '../components/carousel/CarouselSlide'
 import NavBar from '../header/NavBar'
 import BlogList from '../components/bloglist/BlogList'
 
+
 const HomePage = () => {
   const [movies, setMovies] = useState([])
-
+  
   const fetchMovies = async () => {
     try {
       const res = await fetch('http://localhost:7000/api/posts')

@@ -9,6 +9,13 @@ const postRoutes = require('./routes/postRoute')
 
 const app = express();
 
+const corsOptions = {
+    origin: 'http://localhost:5173',
+    optionsSuccessStatus: 200
+}
+
+app.use(cors(corsOptions))
+
 app.use(cors())
 
 app.get('/', (req, res) => {

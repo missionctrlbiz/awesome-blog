@@ -1,0 +1,30 @@
+version: '3.8'
+
+services:
+  frontend:
+    build: 
+      # image: biibiiking/front:v1.0
+      context: ./frontend
+      dockerfile: Dockerfile
+    ports:
+      - "8080:80"
+    networks:
+      - skynet
+    depends_on:
+      - backend
+
+  backend:
+    build: 
+      context: ./backend
+      dockerfile: Dockerfile
+    ports:
+      - "7000:7000"
+    networks:
+      - skynet
+    environment:
+      - MONGO_URI=${MONGO_URI}
+      - PORT=${PORT}
+
+networks:
+  skynet:
+    driver: bridge
