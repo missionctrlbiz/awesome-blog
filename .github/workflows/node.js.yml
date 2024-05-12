@@ -1,0 +1,151 @@
+name: Frontend and Backend CI
+
+on:
+  push:
+    branches: [ main ]
+    paths:
+      - 'frontend/'
+      - 'backend/'
+  pull_request:
+    branches: [ main ]
+    paths:
+      - 'frontend/'
+      - 'backend/'
+
+jobs:
+
+  test-frontend:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+        
+      - name: Use Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18.x'
+          
+      - name: Install dependencies and run tests
+        run: |
+          cd frontend
+          npm ci
+          npm test
+
+  lint-frontend:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+        
+      - name: Use Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18.x'
+          
+      - name: Install dependencies and run linting
+        run: |
+          cd frontend
+          npm ci
+          npm run lint
+
+  build-frontend:
+    needs: [test-frontend, lint-frontend]
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+        
+      - name: Use Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18.x'
+          
+      - name: Install dependencies and build
+        run: |
+          cd frontend
+          npm ci
+          npm run build
+        
+      - name: Upload frontend artifact
+        uses: actions/upload-artifact@v3
+        with:
+          name: frontend-dist
+          path: frontend/dist
+
+  test-backend:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+        
+      - name: Use Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18.x'
+          
+      - name: Install dependencies and run tests
+        run: |
+          cd backend
+          npm ci
+          npm test
+
+  lint-backend:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+        
+      - name: Use Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18.x'
+          
+      - name: Install dependencies and run linting
+        run: |
+          cd backend
+          npm ci
+          npm run lint
+
+  docker:
+    needs: [build-frontend, test-backend, lint-backend]
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+        
+      - name: Download frontend artifact
+        uses: actions/download-artifact@v3
+        with:
+          name: frontend-dist
+          path: frontend/dist
+        
+      - name: Set up Docker Buildx
+        uses: docker/setup-buildx-action@v2
+        
+      - name: Login to Docker Hub
+        uses: docker/login-action@v2
+        with:
+          username: ${{ secrets.DOCKERHUB_USERNAME }}
+          password: ${{ secrets.DOCKERHUB_TOKEN }}
+        
+      - name: Build and push frontend image
+        uses: docker/build-push-action@v3
+        with:
+          context: frontend
+          file: frontend/Dockerfile
+          push: true
+          tags: ${{ secrets.DOCKERHUB_USERNAME }}/frontend:v1
+        
+      - name: Build and push backend image
+        uses: docker/build-push-action@v3
+        with:
+          context: backend
+          file: backend/Dockerfile
+          push: true
+          tags: ${{ secrets.DOCKERHUB_USERNAME }}/backend:v1
