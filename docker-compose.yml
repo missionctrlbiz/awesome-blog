@@ -24,7 +24,6 @@ services:
     environment:
       - MONGO_URI=${MONGO_URI}
       - PORT=${PORT}
-
 networks:
   skynet:
     driver: bridge
