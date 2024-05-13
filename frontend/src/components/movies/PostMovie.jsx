@@ -1,4 +1,4 @@
-import { Form, Button, FloatingLabel, Toast } from 'react-bootstrap'; 
+import { Form, Button, FloatingLabel, Toast, Alert  } from 'react-bootstrap'; 
 import { useState } from 'react';
 
 const PostMovie = () => {
@@ -7,8 +7,11 @@ const PostMovie = () => {
     const [excerpt, setExcerpt] = useState('');
     const [content, setContent] = useState('');
     const [tags, setTags] = useState('');
-    const [showToast, setShowToast] = useState(false); // State for managing toast visibility
-    const [toastVariant, setToastVariant] = useState('success'); // Added state for toast variant
+    const [showAlert, setShowAlert] = useState(false);
+    const [alertVariant, setAlertVariant] = useState('success');
+    const [alertMessage, setAlertMessage] = useState('');
+    const [showToast, setShowToast] = useState(false); 
+    const [toastVariant, setToastVariant] = useState('success'); 
 
     const postMovie = {
         title: title || '', 
@@ -39,10 +42,16 @@ const PostMovie = () => {
             clearFields();
             // Clear the toast after a delay
             setTimeout(() => setShowToast(false), 3000);
+            setAlertVariant('success');
+            setAlertMessage('Movie added successfully!');
+            setShowAlert(true);
         } catch (error) {
             console.error('Error:', error);
             setToastVariant('danger');
             setShowToast(true);
+            setAlertVariant('danger');
+            setAlertMessage('Error: Movie not added');
+            setShowAlert(true);
         }
     }
     
@@ -115,7 +124,11 @@ const PostMovie = () => {
                             />
                         </FloatingLabel>
                     </Form.Group>
-
+                    {showAlert && (
+                <Alert variant={alertVariant} onClose={() => setShowAlert(false)} dismissible>
+                    {alertMessage}
+                </Alert>
+            )}
                     <Button variant='primary' type='submit' style={{ width: '100%' }}>
                         Submit
                     </Button>

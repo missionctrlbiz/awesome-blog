@@ -1,4 +1,3 @@
-/* eslint-disable react/prop-types */
 import PropTypes from "prop-types"
 import BlogCard from '../blogcard/BlogCard';
 import './BlogList.css';
