@@ -1,7 +1,6 @@
 import { useState, useEffect } from 'react'
-// import BoxOffice from '../components/BoxOffice'
+import BoxOffice from '../components/BoxOffice'
 import CarouselSlide from '../components/carousel/CarouselSlide'
-import NavBar from '../header/NavBar'
 import BlogList from '../components/bloglist/BlogList'
 
 
@@ -24,12 +23,11 @@ const HomePage = () => {
 
   return (
     <>
-      <NavBar />
       <CarouselSlide />
-      {/* <div className='container'>
-        <BoxOffice />
-      </div> */}
       <BlogList movies={movies} />
+      <div className='container'>
+        <BoxOffice />
+      </div>
     </>
   )
 }

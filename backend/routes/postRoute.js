@@ -5,9 +5,13 @@ const Post = require('../models/Post');
 // Middleware for parsing JSON data
 router.use(express.json());
 
+// Error Handling Middleware
+const errorHandler = (res, error) => {
+    console.error(error);
+    res.status(500).json({ message: 'Internal server error' });
+};
+
 // Get all posts
-
-
 router.get('/posts', async (req, res) => {
     try {
         const posts = await Post.find();
@@ -16,7 +20,7 @@ router.get('/posts', async (req, res) => {
         }
         res.json(posts);
     } catch (error) {
-        res.status(500).json({ message: 'Internal server error' });
+        errorHandler(res, error);
     }
 });
 
@@ -30,7 +34,7 @@ router.get('/post/:id', async (req, res) => {
         }
         res.json(post);
     } catch (error) {
-        res.status(500).json({ message: 'Internal server error' });
+        errorHandler(res, error);
     }
 });
 
@@ -57,7 +61,7 @@ router.patch('/post/:id', async (req, res) => {
         }
         res.json(updatedPost);
     } catch (error) {
-        res.status(400).json({ message: 'Invalid data provided' });
+        errorHandler(res, error);
     }
 });
 
@@ -71,7 +75,7 @@ router.delete('/post/:id', async (req, res) => {
         }
         res.json(deletedPost);
     } catch (error) {
-        res.status(500).json({ message: 'Internal server error' });
+        errorHandler(res, error);
     }
 });
 
