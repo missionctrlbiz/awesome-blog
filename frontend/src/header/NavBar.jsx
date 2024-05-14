@@ -18,16 +18,16 @@ const NavBar = () => {
       </Navbar.Brand>
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
       <Navbar.Collapse id="basic-navbar-nav">
-        <Nav className="me-auto">
-          <Nav.Link href="/">Home</Nav.Link>
-          <Nav.Link href="/browse-flicks">Browse Flicks</Nav.Link>
-          <Nav.Link href="/post-flick">Post A Flick</Nav.Link>
-          <NavDropdown title="More" id="basic-nav-dropdown">
-            <NavDropdown.Item href="/buy-ticket">Buy A Ticket</NavDropdown.Item>
-            <NavDropdown.Item href="/premiere">Movie Premiere</NavDropdown.Item>
-            <NavDropdown.Divider />
-            <NavDropdown.Item href="/free-tickets">Free Tickets</NavDropdown.Item>
-          </NavDropdown>
+      <Nav className="me-auto" style={{ fontWeight: '600', color: '#000' }}>
+            <Nav.Link href="/" className="nav-link-custom">Home</Nav.Link>
+            <Nav.Link href="/browse-flicks" className="nav-link-custom">Browse Flicks</Nav.Link>
+            <Nav.Link href="/post-flick" className="nav-link-custom">Post A Flick</Nav.Link>
+            <NavDropdown title="More" className="dropdown-item-custom">
+                <NavDropdown.Item href="/buy-ticket" className="dropdown-item-custom">Buy A Ticket</NavDropdown.Item>
+                <NavDropdown.Item href="/premiere" className="dropdown-item-custom">Movie Premiere</NavDropdown.Item>
+                <NavDropdown.Divider />
+                <NavDropdown.Item href="/free-tickets" className="dropdown-item-custom">Free Tickets</NavDropdown.Item>
+            </NavDropdown>
         </Nav>
       </Navbar.Collapse>
     </Container>

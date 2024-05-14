@@ -36,19 +36,19 @@ const CarouselSlide = () => {
       <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
     </div>
     <div className="carousel-inner">
-      <div className="carousel-item">
+      <div className="carousel-item active">
         
-      <img src="/abigail-p.jpg" alt="" />
+      <img src="/Monkey.jpg" alt="" />
 
         <div className="container">
           <div className="carousel-caption text-start" style={{ paddingLeft : '150px', paddingBottom : '150px' }}>
             <h1>Example headline.</h1>
             <p>Some representative placeholder content for the first slide of the carousel.</p>
-            <p><a className="btn btn-lg btn-primary" href="#">Sign up today</a></p>
+            <p><a className="btn btn-lg btn-primary" href="#">Watch Trailer</a></p>
           </div>
         </div>
       </div>
-      <div className="carousel-item active">
+      <div className="carousel-item">
         
       <img src="/abigail-p.jpg" alt="" style={{ width: '100%' }} />
 
@@ -56,18 +56,18 @@ const CarouselSlide = () => {
           <div className="carousel-caption text-start" style={{ paddingLeft : '150px', paddingBottom : '150px' }}>
             <h1>Another example headline.</h1>
             <p>Some representative placeholder content for the second slide of the carousel.</p>
-            <p><a className="btn btn-lg btn-primary" href="#">Learn more</a></p>
+            <p><a className="btn btn-lg btn-primary" href="#">Watch Trailer</a></p>
           </div>
         </div>
       </div>
       <div className="carousel-item">
-        <img src="/Abigail-poster.jpeg" alt="" />
+        <img src="/GvK.jpg" alt="" />
 
         <div className="container">
           <div className="carousel-caption text-start" style={{ paddingLeft : '150px', paddingBottom : '150px' }}>
             <h1>One more for good measure.</h1>
             <p>Some representative placeholder content for the third slide of this carousel.</p>
-            <p><a className="btn btn-lg btn-primary" href="#">Browse gallery</a></p>
+            <p><a className="btn btn-lg btn-primary" href="#">Watch Trailer</a></p>
           </div>
         </div>
       </div>

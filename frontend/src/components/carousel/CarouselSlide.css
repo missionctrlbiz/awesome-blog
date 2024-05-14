@@ -37,3 +37,49 @@
     color: #fff; /* Text color */
   }
   
+  /* Custom Button Styles */
+.trailer-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 20px;
+  font-size: 1.25rem; /* Equivalent to btn-lg */
+  font-weight: 700; /* Equivalent to btn-primary */
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.trailer-btn:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
+.trailer-btn:active {
+  background-color: #004085;
+  transform: scale(1);
+}
+
+/* Icon Styles */
+.icon-play {
+  display: inline-block;
+  margin-right: 8px;
+  width: 16px;
+  height: 16px;
+  background: url('path/to/play-icon.svg') no-repeat center center;
+  background-size: contain;
+}
+
+
+.nav-link-custom, .dropdown-item-custom {
+  font-weight: 600;
+  color: #3174e0;
+  transition: color 0.3s ease;
+}
+
+.nav-link-custom:hover, .dropdown-item-custom:hover {
+  color: #000; /* Dark grey */
+}
