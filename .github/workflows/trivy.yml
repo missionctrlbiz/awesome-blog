@@ -1,14 +1,14 @@
 name: Docker Image Vulnerability Scan
 
 on:
-  # schedule:
-  #   - cron: "0 12 * * *" # Detect your docker image vulnerability every day at 12:00 (UTC).
   push:
     branches:
       - "build"
     paths:
-      - "**/*"
-      - "!**/README.md"
+      - "/*"
+      - "!/README.md"
+  # schedule:
+  #   - cron: "0 12 * * *" # Detect your docker image vulnerability every day at 12:00 (UTC).
 
 jobs:
   scan:
@@ -17,26 +17,25 @@ jobs:
 
     steps:
       - name: Pull Frontend Docker Image
-        run: docker pull ${{ secrets.DOCKERHUB_USERNAME }}/${{ secrets.FRONTEND_IMAGE }}:v1
+        run: docker pull ${{ secrets.DOCKER_USERNAME }}/${{ secrets.FRONTEND_IMAGE }}:v1
 
       - name: Scan Frontend Docker Image
         uses: aquasecurity/trivy-action@master
         with:
-          image-ref: "${{ secrets.DOCKERHUB_USERNAME }}/${{ secrets.FRONTEND_IMAGE }}:v1"
+          image-ref: "${{ secrets.DOCKER_USERNAME }}/${{ secrets.FRONTEND_IMAGE }}:v1"
           exit-code: "1"
           ignore-unfixed: true
           vuln-type: "os,library"
           severity: "CRITICAL,HIGH"
 
       - name: Pull Backend Docker Image
-        run: docker pull ${{ secrets.DOCKERHUB_USERNAME }}/${{ secrets.BACKEND_IMAGE }}:v1
+        run: docker pull ${{ secrets.DOCKER_USERNAME }}/${{ secrets.BACKEND_IMAGE }}:v1
 
       - name: Scan Backend Docker Image
         uses: aquasecurity/trivy-action@master
         with:
-          image-ref: "${{ secrets.DOCKERHUB_USERNAME }}/${{ secrets.BACKEND_IMAGE }}:v1"
+          image-ref: "${{ secrets.DOCKER_USERNAME }}/${{ secrets.BACKEND_IMAGE }}:v1"
           exit-code: "1"
           ignore-unfixed: true
           vuln-type: "os,library"
           severity: "CRITICAL,HIGH"
-
