@@ -13,23 +13,23 @@ const PostMovie = () => {
     const [showToast, setShowToast] = useState(false); 
     const [toastVariant, setToastVariant] = useState('success'); 
 
-    const postMovie = {
+    const Movies = {
         title: title || '', 
         coverImage: coverImage || '', 
         excerpt: excerpt || '', 
         content: content || '', 
-        tags: tags ? tags.split(',').map(tag => tag.trim()) : [] 
+        tags: tags ? tags.split(',') : [] 
     };
 
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            const response = await fetch('http://localhost:7000/api/posts', {
+            const response = await fetch('http://localhost:7000/api/post', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
                 },
-                body: JSON.stringify(postMovie) 
+                body: JSON.stringify(Movies) 
             });
 
             if (!response.ok) {
@@ -67,7 +67,7 @@ const PostMovie = () => {
         <div className='container my-4'>
             <h1 className='text-primary'>Add New Movie</h1>
             <div className='mt-4'>
-                <Form onSubmit={handleSubmit}>
+            <form onSubmit={(e) => handleSubmit(e)}>
                     <Form.Group className='mb-3' controlId='title'>
                         <FloatingLabel controlId='title' label='Title'>
                             <Form.Control 
@@ -132,7 +132,7 @@ const PostMovie = () => {
                     <Button variant='primary' type='submit' style={{ width: '100%' }}>
                         Submit
                     </Button>
-                </Form>
+                </form>
             </div>
             <Toast
                 show={showToast}
