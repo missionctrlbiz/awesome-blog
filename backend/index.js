@@ -8,7 +8,7 @@ const app = express();
 
 // CORS Configuration
 const corsOptions = {
-  origin: 'https://flick-4df37.web.app/', // Replace with the appropriate origin for your frontend
+  origin: 'https://flick-4df37.web.app', // Replace with the appropriate origin for your frontend
   optionsSuccessStatus: 200
 };
 app.use(cors(corsOptions));
