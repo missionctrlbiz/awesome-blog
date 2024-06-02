@@ -8,7 +8,7 @@ const app = express();
 
 // CORS Configuration
 const corsOptions = {
-  origin: 'http://localhost:5173', // Replace with the appropriate origin for your frontend
+  origin: 'https://awesome-blog-hkac.onrender.com', // Replace with the appropriate origin for your frontend
   optionsSuccessStatus: 200
 };
 app.use(cors(corsOptions));
