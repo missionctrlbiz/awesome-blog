@@ -1,0 +1,35 @@
+
+  
+  .image-column {
+    flex: 1;
+  }
+  
+  .content-column {
+    flex: 2;
+  }
+  
+  .cover-image {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    border-radius: 15px;
+    object-fit: cover;
+  }
+  
+  .tags-container {
+    margin-top: 10px;
+  }
+  
+  .tag-pill {
+    display: inline-block;
+    background-color: blue;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 15px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    font-size: 0.9rem;
+  }
+  
+  /* Add any additional styling as needed */
+  

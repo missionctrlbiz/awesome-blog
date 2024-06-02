@@ -1,0 +1,36 @@
+.container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+  
+  .column {
+    flex: 1;
+    text-align: center;
+    position: relative;
+    cursor: pointer;
+  }
+  
+  .column:hover::before {
+    content: attr(title);
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+  }
+  
+  .column img {
+    width: 50px; /* Adjust the size of the image */
+    height: auto;
+  }
+  
+  .button-text {
+    display: block;
+    margin-top: 5px;
+  }
+  
