@@ -12,7 +12,7 @@ const ViewFlick = () => {
   useEffect(() => {
     const fetchPost = async () => {
       try {
-        const response = await fetch(`http://localhost:7000/api/post/${id}`);
+        const response = await fetch(`https://awesome-blog-hkac.onrender.com/api/post/${id}`);
         if (!response.ok) {
           throw new Error('Failed to fetch post');
         }
@@ -34,7 +34,7 @@ const ViewFlick = () => {
 
   const handleDelete = async () => {
     try {
-      const response = await fetch(`http://localhost:7000/api/post/${id}`, {
+      const response = await fetch(`https://awesome-blog-hkac.onrender.com/api/post/${id}`, {
         method: 'DELETE',
       });
       if (!response.ok) {
@@ -73,9 +73,9 @@ const ViewFlick = () => {
     .getHours()
     .toString()
     .padStart(2, '0')}:${createdAtDate
-    .getMinutes()
-    .toString()
-    .padStart(2, '0')}`;
+      .getMinutes()
+      .toString()
+      .padStart(2, '0')}`;
 
   return (
     <div className="container" style={{ marginTop: '20px' }}>

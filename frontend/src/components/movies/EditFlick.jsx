@@ -33,7 +33,7 @@ const EditFlick = () => {
     useEffect(() => {
         const fetchMovie = async () => {
             try {
-                const response = await fetch(`http://localhost:7000/api/post/${id}`);
+                const response = await fetch(`https://awesome-blog-hkac.onrender.com/api/post/${id}`);
                 if (!response.ok) {
                     throw new Error('Failed to fetch movie');
                 }
@@ -57,7 +57,7 @@ const EditFlick = () => {
 
     const handleSubmit = async (values, { setSubmitting }) => {
         try {
-            const response = await fetch(`http://localhost:7000/api/post/${id}`, {
+            const response = await fetch(`https://awesome-blog-hkac.onrender.com/api/post/${id}`, {
                 method: 'PATCH',
                 headers: {
                     'Content-Type': 'application/json',
@@ -260,7 +260,7 @@ export default EditFlick;
 //     const handleSubmit = async (e) => {
 //         e.preventDefault();
 //         try {
-//             const response = await fetch('http://localhost:7000/api/post', {
+//             const response = await fetch('https://awesome-blog-hkac.onrender.com/api/post', {
 //                 method: 'POST',
 //                 headers: {
 //                     'Content-Type': 'application/json'

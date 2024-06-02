@@ -20,7 +20,7 @@ const BrowseFlick = () => {
 
     const fetchFlicks = async () => {
         try {
-            const response = await fetch('http://localhost:7000/api/posts');
+            const response = await fetch('https://awesome-blog-hkac.onrender.com/api/posts');
             if (!response.ok) {
                 throw new Error('Failed to fetch flicks');
             }
@@ -35,7 +35,7 @@ const BrowseFlick = () => {
 
     const fetchFlick = async (id) => {
         try {
-            const response = await fetch(`http://localhost:7000/api/post/${id}`);
+            const response = await fetch(`https://awesome-blog-hkac.onrender.com/api/post/${id}`);
             if (!response.ok) {
                 throw new Error('Failed to fetch flick');
             }

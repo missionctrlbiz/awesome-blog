@@ -6,10 +6,10 @@ import BlogList from '../components/bloglist/BlogList'
 
 const HomePage = () => {
   const [movies, setMovies] = useState([])
-  
+
   const fetchMovies = async () => {
     try {
-      const res = await fetch('http://localhost:7000/api/posts')
+      const res = await fetch('https://awesome-blog-hkac.onrender.com/api/posts')
       const data = await res.json()
       setMovies(data)
     } catch (error) {
